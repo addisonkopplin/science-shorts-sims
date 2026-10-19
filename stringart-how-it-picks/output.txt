@@ -1,0 +1,62 @@
+core.js commit 209877cbecb0a351b38da0a4d9dd42d4c57df96d (md5 74f36669305ffdaa8c5aa86195f55b6a); photo Albert_Einstein_1947.jpg (LoC LC-USZ62-60242, cph.3b46036)
+Maker page status: Finished: 2,052 lines on 468 nails. Calculated in 1.4 s. It stopped before 5,100 lines: no further line brings the image closer to the photo.
+pristine re-run order identical to the Maker page's order: True; solver-only time 1143 ms (node, setup excluded)
+nails=468, skip=33 (pair usable if > 33 apart => 401 usable partners per nail), grid=300x300, max lines 5100
+nail sequence length=2053 (=> 2052 lines); first 11 nails: [151, 318, 153, 316, 150, 319, 147, 314, 154, 315, 151]; last nail: 74
+RMS lightness gap (L*, inside the nail circle): start 55.24, end 15.05
+  after line 1: RMS 55.19
+  after line 10: RMS 54.82
+  after line 100: RMS 51.46
+  after line 500: RMS 38.91
+  after line 800: RMS 31.47
+  after line 1000: RMS 27.29
+  after line 2000: RMS 15.23
+  after line 2052: RMS 15.05
+lines where the RMS gap rose: 1 of 2052 (first few: [2052])
+
+# candidates per step (by the solver's own score)
+step    1: from nail 318, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 153
+step    2: from nail 153, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 316
+step    3: from nail 316, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 150
+step    4: from nail 150, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 319
+step    5: from nail 319, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 147
+step    6: from nail 147, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 314
+step    7: from nail 314, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 154
+step    8: from nail 154, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 315
+step    9: from nail 315, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 151
+step   10: from nail 151, partners already used  2, candidates 399 (expected 399), help 399, hurt 0, best -> nail 321
+step   11: from nail 321, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 148
+step  100: from nail 429, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 232
+step  200: from nail 434, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 248
+step  300: from nail  20, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 229
+step  400: from nail 458, partners already used  1, candidates 400 (expected 400), help 400, hurt 0, best -> nail 289
+step  500: from nail 466, partners already used  3, candidates 398 (expected 398), help 398, hurt 0, best -> nail 296
+step  600: from nail 394, partners already used  1, candidates 400 (expected 400), help 372, hurt 28, best -> nail 137
+step  700: from nail 314, partners already used  5, candidates 396 (expected 396), help 396, hurt 0, best -> nail 371
+step  800: from nail 309, partners already used  5, candidates 396 (expected 396), help 396, hurt 0, best -> nail 383
+step  900: from nail 405, partners already used  5, candidates 396 (expected 396), help 372, hurt 24, best -> nail 2
+step 1000: from nail  47, partners already used  3, candidates 398 (expected 398), help 376, hurt 22, best -> nail 341
+step 1100: from nail 125, partners already used  5, candidates 396 (expected 396), help 272, hurt 124, best -> nail 373
+step 1200: from nail 148, partners already used  9, candidates 392 (expected 392), help 238, hurt 154, best -> nail 399
+step 1300: from nail 344, partners already used  9, candidates 392 (expected 392), help 377, hurt 15, best -> nail 254
+step 1400: from nail 402, partners already used 11, candidates 390 (expected 390), help 350, hurt 40, best -> nail 35
+step 1500: from nail  84, partners already used  1, candidates 400 (expected 400), help 246, hurt 154, best -> nail 25
+step 1600: from nail  37, partners already used  1, candidates 400 (expected 400), help 238, hurt 162, best -> nail 346
+step 1700: from nail 332, partners already used 15, candidates 386 (expected 386), help 311, hurt 75, best -> nail 153
+step 1800: from nail 234, partners already used  7, candidates 394 (expected 394), help 177, hurt 217, best -> nail 359
+step 1900: from nail   7, partners already used  7, candidates 394 (expected 394), help 50, hurt 344, best -> nail 215
+step 2000: from nail 281, partners already used 15, candidates 386 (expected 386), help 104, hurt 282, best -> nail 326
+steps where every candidate helped: 721 of 2051; last such step: 1324
+candidates per step ranged 370-400 over 2051 steps
+
+# the stop (scan at the moment the loop breaks, same state the solver saw)
+stopped after line 2052 of a 5100 limit, on nail 74 (came from nail 438); last nail in order = 74: True
+unused lines from nail 74: 396; helping by its own score: 0; lowering the plain lightness error (no weights, no crowding charge): 91
+unused lines on the whole board: 91782; helping by its own score elsewhere: 10864; lowering plain lightness error anywhere: 47327; best score anywhere -11685.4
+
+# first ten lines
+nails touched by lines 1-10: [147, 150, 151, 153, 154, 314, 315, 316, 318, 319]
+
+# thread: sum of the 2052 chord lengths on a 60 cm frame = 943.4 m; with the Maker's +10% = 1037.7 m
+distinct nails used: 467 of 468; most-used nail appears 16 times
+wrote build_stages.png (10, 100, 300, 500, 800, 1200, 2052 lines) and first10.png
