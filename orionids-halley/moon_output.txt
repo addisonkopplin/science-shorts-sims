@@ -1,0 +1,9 @@
+Denver 39.74N 104.99W (UTC-6 MDT): moonset 2026/10/22 03:22:58 local; astro dawn 2026/10/22 05:47:33 local; dark window 2.41 h; radiant alt at moonset 55 deg; moon illum 84%
+New York 40.71N 74.01W (UTC-4 EDT): moonset 2026/10/22 03:12:35 local; astro dawn 2026/10/22 05:43:30 local; dark window 2.52 h; radiant alt at moonset 54 deg; moon illum 84%
+London 51.51N 0.13W (UTC+1 BST): moonset 2026/10/22 02:49:33 local; astro dawn 2026/10/22 05:44:42 local; dark window 2.92 h; radiant alt at moonset 44 deg; moon illum 82%
+Tokyo 35.68N 139.69E (UTC+9): moonset 2026/10/22 01:25:18 local; astro dawn 2026/10/22 04:28:10 local; dark window 3.05 h; radiant alt at moonset 50 deg; moon illum 79%
+Sydney 33.87S 151.21E (UTC+11 AEDT): moonset 2026/10/22 03:38:14 local; astro dawn 2026/10/22 04:37:38 local; dark window 0.99 h; radiant alt at moonset 35 deg; moon illum 79%
+2026/10/21 00:00 UTC illum 71.9
+2026/10/22 00:00 UTC illum 80.5
+2026/10/22 06:00 UTC illum 82.5
+prev first quarter 2026/10/18 16:12:36 next full 2026/10/26 04:11:45

@@ -1,0 +1,14 @@
+1 mg at 66 km/s: KE = 0.5 * 1e-06 kg * (66000 m/s)^2 = 2178 J
+baseball 145.3 g at 90 mph (40.23 m/s): KE = 117.6 J; ratio = 18.5
+  ratio range for 5-5.25 oz at 90 mph: 18.1-19.0
+  at 95 mph: 16.6
+specific KE at 66 km/s = 2178.00 MJ/kg = 520.55 x TNT (4.184 MJ/kg)
+particle speed at 1 AU on Halley's orbit ~ 41.5 km/s; Earth ~ 29.8 km/s; solar escape at 1 AU 42.1 km/s
+max possible entry speed (head-on, parabolic, + Earth's pull) ~ 72.8 km/s  (AMS: 72 km/s)
+Orionid: entry 66 -> geocentric 65.0 km/s -> angle between particle and Earth velocity ~ 131 deg (180 = exactly head-on)
+if they had moved the same way as Earth (prograde, same angle mirrored): geocentric ~ 31.5 km/s
+Halley-orbit dust (a=17.9 au): heliocentric 41.5 km/s, same 131 deg geometry -> geocentric 65.0 km/s -> entry 66.0 km/s
+retrograde but circular orbit at 1 AU: heliocentric 29.8 km/s, same 131 deg geometry -> geocentric 54.2 km/s -> entry 55.3 km/s
+Halley-orbit speed at 1 AU as a share of solar escape speed there: 98.6%
+ratio at 94 mph: 17.0
+Halley's current orbit passes 11.1 million km from Earth's orbit at closest (JPL MOID 0.0745 au)
