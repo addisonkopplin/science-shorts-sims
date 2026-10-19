@@ -1,0 +1,38 @@
+n= 10: P(at least one shared birthday) = 0.116948  (11.7%)
+n= 20: P(at least one shared birthday) = 0.411438  (41.1%)
+n= 22: P(at least one shared birthday) = 0.475695  (47.6%)
+n= 23: P(at least one shared birthday) = 0.507297  (50.7%)
+n= 30: P(at least one shared birthday) = 0.706316  (70.6%)
+n= 40: P(at least one shared birthday) = 0.891232  (89.1%)
+n= 50: P(at least one shared birthday) = 0.970374  (97.0%)
+n= 57: P(at least one shared birthday) = 0.990122  (99.0%)
+n= 60: P(at least one shared birthday) = 0.994123  (99.4%)
+n= 70: P(at least one shared birthday) = 0.999160  (99.9%)
+n= 75: P(at least one shared birthday) = 0.999720  (100.0%)
+n=100: P(at least one shared birthday) = 1.000000  (100.0%)
+smallest n with P > 50%: 23;  smallest n with P > 99%: 57
+pairs among 23 people: C(23,2) = 253
+P(someone shares YOUR birthday) with 22 others: 0.0586
+people needed for >50% that someone shares YOUR birthday: 253
+simulation seed=20261019: 1000 rooms of 23 -> 510 rooms had a shared birthday (51.0%)
+
+# why 23: pairs grow like n^2/2
+  n=  5: pairs=   10
+  n= 10: pairs=   45
+  n= 15: pairs=  105
+  n= 20: pairs=  190
+  n= 23: pairs=  253
+  n= 30: pairs=  435
+  n= 40: pairs=  780
+  n= 50: pairs= 1225
+  n= 70: pairs= 2415
+if the 253 pairs were independent 1-in-365 chances: 1-(364/365)^253 = 0.5005
+naive (wrong) multiplication 253/365 = 0.6932
+P(no shared birthday | 23) exact = 0.492703  (just below one half)
+approximation 1-exp(-n(n-1)/730) at 23 = 0.5000
+365*ln2 = 253.0  (why ~253 single chances give ~50%: same number behind #6 and #7)
+50% point estimate sqrt(2 ln2 * 365) = 22.49
+with Feb 29 at weight 1/1461: P(23) = 0.506865 vs 365-day 0.507297
+smallest n with P(some day has >=3 people) > 50%: 88 (0.5111)
+rooms.json written: 510 of 1000 flagged (matches the sim above); featured room 0 shared days: [329]
+2,000 runs of 1,000 rooms: median 507, middle 95% 476-537
