@@ -142,6 +142,29 @@ away). The last ball is staged on purpose: it is sent down the all-left path, on
 likely paths, (1/2)^12, and drops into the 10x slot. The sound is discrete events only (pegs,
 landings, near misses, the final ball and one strike), no music bed.
 
+### `orionids-halley/`: why Halley's dust hits so fast
+`python energy.py` (standard library only) gives the numbers in the Orionids Short: a 1 mg speck at
+66 km/s carries about 2,178 J, about 18.5 fastballs (a 5.125 oz baseball at 90 mph); dust on Halley's
+orbit (JPL a = 17.9 au) passes Earth's distance at about 41.5 km/s, 98.6% of the Sun's escape speed there
+(42.1 km/s); the 66 km/s entry speed implies the dust and Earth's velocities are about 131° apart; and the
+72.8 km/s upper limit for meteors from our solar system. `python moon.py` (needs `ephem`, PyEphem) prints
+moonset, astronomical dawn and the Moon's phase for the peak night (21–22 Oct 2026) in a few cities.
+
+### `p256-seed-mystery/`: P-256's seed came from a 1997 clock
+`python reproduce.py` (standard library only). An independent reproduction written from the POSIX
+drand48 spec: `srand48(871696354)` (16 Aug 1997, 01:52:34 UTC), 20 bytes per candidate, and candidate
+1,842 equals the P-256 seed published in FIPS 186-2. It also checks the ANSI X9.62 / FIPS 186-2 SHA-1 step
+(seed → c) and that the published b satisfies b²c ≡ −27 (mod p), and prints the runs reported for the
+other NIST curves and the skipped candidate 876.
+
+### `green-white-dwarf/`: the greenest star known
+`python gaia_calc.py` (standard library only). Distance to WD J1330+6435 from its Gaia parallax
+(11.58 ± 0.78 mas: about 282 light-years) and how much fainter it is than a naked-eye star.
+
+### `mmx-phobos/`: Phobos and the MMX sample-return mission
+`python calc.py` (standard library only). Phobos's escape speed and surface gravity from JPL's GM and
+mean radius, and the size of its Hill sphere around Mars.
+
 ## License
 
 [MIT](LICENSE).
