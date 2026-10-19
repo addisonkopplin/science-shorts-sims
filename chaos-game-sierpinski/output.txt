@@ -1,0 +1,23 @@
+seed=20261019, points=200,000, start=corner (0,0)
+level 1: share of ALL 200,000 dots (from the very first) inside the level-1 pattern: 1.000000
+level 5: share of ALL 200,000 dots (from the very first) inside the level-5 pattern: 1.000000
+level 10: share of ALL 200,000 dots (from the very first) inside the level-10 pattern: 1.000000
+level 20: share of ALL 200,000 dots (from the very first) inside the level-20 pattern: 1.000000
+(a start OFF the pattern would only get within 2^-k of it after k jumps; from a corner it never leaves)
+level 6 (729 cells): points to cover 50%=479, 90%=1,729, 99%=3,227, 100%=4194
+level 7 (2187 cells): points to cover 50%=1,500, 90%=4,819, 99%=10,779, 100%=23784
+after 1 removal steps, area left = (3/4)^1 = 0.750000
+after 5 removal steps, area left = (3/4)^5 = 0.237305
+after 10 removal steps, area left = (3/4)^10 = 0.056314
+after 20 removal steps, area left = (3/4)^20 = 0.003171
+similarity dimension = log 3 / log 2 = 1.5850
+previews: preview_1k.png preview_10k.png preview_50k.png
+Pascal check, rows 0-127: mismatches between 'odd' and 'i&j==0' = 0; odd entries in first 64 rows = 729 (= 3^6 = 729)
+
+# r1 checks
+exact integer check, 60 jumps from corner (0,0): every dot has x,y binary digits with no shared 1s: True
+20 seeds, 1,000 dots each: level-4 triangles hit min 81/81 max 81/81; level-5 min 233/243 max 242/243
+square, 4 corners, ratio 1/2, 200,000 dots: 64x64 cells hit 4096/4096, min 25 max 82 per cell (mean 48.8)
+fixed cycle of corners: after 100 jumps the dots sit on 3 distinct points: [(np.float64(0.142857143), np.float64(0.285714286)), (np.float64(0.285714286), np.float64(0.571428571)), (np.float64(0.571428571), np.float64(0.142857143))]
+share of the 200,000 dots in the lower-left half-size copy: 0.3316 (about 1/3, so the 2x zoom needs ~3x the dots to look as dense)
+Pascal rows 0-15 vs the 81 level-4 triangles: mismatches = 0; odd entries = 81 (= 3^4 = 81)
