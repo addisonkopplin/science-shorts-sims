@@ -1,0 +1,74 @@
+heart curve: non-zero circles = 8 (of 4096)
+      1 circles: worst error = 23.44% of width
+      2 circles: worst error = 23.44% of width
+      3 circles: worst error = 15.62% of width
+      5 circles: worst error = 4.69% of width
+     10 circles: worst error = 0.00% of width
+     20 circles: worst error = 0.00% of width
+     30 circles: worst error = 0.00% of width
+     50 circles: worst error = 0.00% of width
+    100 circles: worst error = 0.00% of width
+    200 circles: worst error = 0.00% of width
+    500 circles: worst error = 0.00% of width
+   fewest circles for worst error < 10.0%: 4
+   fewest circles for worst error < 5.0%: 5
+   fewest circles for worst error < 2.0%: 7
+   fewest circles for worst error < 1.0%: 8
+   fewest circles for worst error < 0.5%: 8
+five-pointed star: non-zero circles = 4096 (of 4096)
+      1 circles: worst error = 17.43% of width
+      2 circles: worst error = 8.12% of width
+      3 circles: worst error = 3.99% of width
+      5 circles: worst error = 2.64% of width
+     10 circles: worst error = 1.31% of width
+     20 circles: worst error = 0.66% of width
+     30 circles: worst error = 0.44% of width
+     50 circles: worst error = 0.26% of width
+    100 circles: worst error = 0.13% of width
+    200 circles: worst error = 0.07% of width
+    500 circles: worst error = 0.03% of width
+   fewest circles for worst error < 10.0%: 2
+   fewest circles for worst error < 5.0%: 3
+   fewest circles for worst error < 2.0%: 7
+   fewest circles for worst error < 1.0%: 14
+   fewest circles for worst error < 0.5%: 27
+cat silhouette (the Short's drawing): non-zero circles = 4095 (of 4096)
+      1 circles: worst error = 35.31% of width
+      2 circles: worst error = 31.08% of width
+      3 circles: worst error = 24.27% of width
+      5 circles: worst error = 17.83% of width
+     10 circles: worst error = 8.83% of width
+     20 circles: worst error = 3.49% of width
+     30 circles: worst error = 2.01% of width
+     50 circles: worst error = 1.46% of width
+    100 circles: worst error = 0.71% of width
+    200 circles: worst error = 0.34% of width
+    500 circles: worst error = 0.12% of width
+   fewest circles for worst error < 10.0%: 9
+   fewest circles for worst error < 5.0%: 17
+   fewest circles for worst error < 2.0%: 32
+   fewest circles for worst error < 1.0%: 73
+   fewest circles for worst error < 0.5%: 137
+cat: biggest circle radius = 37.61, 20th = 0.369, 100th = 0.0100 (units: drawing width = 77.8)
+cat: speeds (turns per loop) of the 10 biggest circles: [1, -1, 2, -2, 3, -3, -4, 6, -6, 5]
+contact sheet: cat_circles.png (3, 5, 10, 20, 50, 100)
+
+# r1 checks (cat)
+k=0 (centre) coefficient |c0| = 5.75e-15 (path is mean-centred, so no non-spinning term in the chain)
+     3 circles: timing-matched worst gap 24.27%, shape gap (Hausdorff) 20.94%, RMS gap 13.023%
+    10 circles: timing-matched worst gap 8.83%, shape gap (Hausdorff) 8.79%, RMS gap 3.198%
+    20 circles: timing-matched worst gap 3.49%, shape gap (Hausdorff) 3.45%, RMS gap 1.022%
+    50 circles: timing-matched worst gap 1.46%, shape gap (Hausdorff) 1.46%, RMS gap 0.222%
+   100 circles: timing-matched worst gap 0.71%, shape gap (Hausdorff) 0.71%, RMS gap 0.070%
+  20 lowest speeds: RMS 1.248%, worst 4.66%; top-20-by-radius max speed |k| = 15
+  100 lowest speeds: RMS 0.087%, worst 0.84%; top-100-by-radius max speed |k| = 73
+  speeds    1-  10: biggest radius 37.6131
+  speeds   11-  30: biggest radius 0.4389
+  speeds   31- 100: biggest radius 0.0420
+  speeds  101- 300: biggest radius 0.0044
+  speeds  301-1000: biggest radius 0.0006
+  envelope of |c_k| for speeds 10-500 falls like k^-1.94 (corner-type decay is k^-2)
+  ear 1 tip (index 2291, turn 116 deg per step): closest approach of the redrawn curve 20: 3.45%, 50: 1.41%, 100: 0.71%, 500: 0.11%
+  ear 2 tip (index 2856, turn 120 deg per step): closest approach of the redrawn curve 20: 3.20%, 50: 1.46%, 100: 0.71%, 500: 0.12%
+  circles 21-100 move the pen by median 0.89% of width along the whole loop, max 2.82%; median near the ears 1.26% (they act everywhere; at the ears many line up)
+  ears zoom sheet: ears_zoom.png (10, 20, 50, 100, 500)
