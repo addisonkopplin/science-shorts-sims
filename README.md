@@ -81,6 +81,67 @@ The reusable toolkit is the `sound/` package (scales, instruments, mixing and ma
 Captions use the Inter font if it is installed (set `SIMS_FONT` to use another); otherwise cairo
 falls back to a default sans-serif.
 
+## More Shorts: one folder each
+
+Each folder holds the code that produced every number in one Short, plus the exact output it printed
+(`output.txt`), so you can check the numbers yourself. Fixed seeds make every run identical.
+
+### `birthday-paradox/`: why 23 people is enough
+`python calc.py` (standard library only). Exact probabilities with fractions for 365 equally likely
+birthdays (Feb 29 ignored, no twins): 23 people give 50.7%, 22 give 47.6%, and 23 people make 253
+pairs. It also simulates 1,000 rooms of 23 (seed 20261019: 510 had a shared birthday), checks the
+Feb 29 and three-way-match variants, and writes `rooms.json`, the per-room match flags the animation
+lights up in the same random order.
+
+### `monty-hall-1000/`: why switching wins 2 in 3
+`python sim.py` (standard library only). 1,000 games under the classic rules (the host knows where
+the car is, always opens a goat door, always offers the switch), with both strategies played on the
+same games: staying won 329, switching 671. Also exact answers, a 1,000,000-game reference, and the
+"ignorant host" case where switching wins only half the time.
+
+### `chaos-game-sierpinski/`: random dots that draw a fractal
+`python sim.py` (needs numpy; Pillow for the previews). 200,000 chaos-game jumps starting on a corner:
+every dot lands inside the Sierpiński pattern at every level checked, plus how fast the dots cover it,
+the area and dimension, and the counterexample (the same game on a square fills in with no holes).
+Writes `preview_1k.png`, `preview_10k.png` and `preview_50k.png`. Corners are labelled A, B, C.
+
+### `fourier-epicycles/`: spinning circles draw a cat
+`python cat_path.py && python sim.py` (numpy; Pillow for the sheets). `cat_path.py` builds the cat
+outline in code (our own drawing, no third-party image) and saves `cat_path.npy`. `sim.py` takes the
+discrete Fourier transform, keeps the K biggest circles, and measures the worst-case error against
+the true outline (about 1% of the cat's width with 100 circles; the sharp ears never quite close).
+Writes `cat_circles.png` and `ears_zoom.png`.
+
+### `stringart-how-it-picks/`: how the string art program picks every line
+Needs Node.js 18+ and Python 3.
+```bash
+cd stringart-how-it-picks/solve
+node solve_loc.js         # writes trace-loc.json (about 20 MB, not committed)
+node render_stages.js     # optional: stages.raw / stages.json for the stage images
+cd .. && python extract.py
+```
+`solve_loc.js` runs the unmodified public String Art Maker solver (`core-209877c.js`, from
+[addisonkopplin/string-art](https://github.com/addisonkopplin/string-art) at commit
+209877cbecb0a351b38da0a4d9dd42d4c57df96d, md5-checked before it runs) on the same input the Maker
+page used (`einsteinloc-input.json`), checks the line order matches the page's own result
+(`einsteinloc-page.json`), then re-runs it with read-only hooks to record each line's score.
+`extract.py` computes every number in the Short from that trace (2,052 lines on 468 nails, and why it
+stops on nail 74). Photo (`einsteinloc-crop.jpg`): Albert Einstein, photograph by Orren Jack Turner,
+1947. Library of Congress LC-USZ62-60242. Public domain in the United States (copyright registered
+1947, not renewed).
+
+### `galton10x/`: the 1 in 4,096 ball
+Uses `common.py` and `sound/` from the repo root (pycairo, numpy, ffmpeg).
+```bash
+cd galton10x
+python galton10x.py          # video only -> build/science-03.video.mp4 (python galton10x.py 30,60 for stills)
+python galton10x_score.py    # sound from the simulation events, muxed -> out/science-03.mp4
+```
+1,000 random balls fall through a 12-row board (seed 241: none reaches either edge, 12 land one bounce
+away). The last ball is staged on purpose: it is sent down the all-left path, one of 4,096 equally
+likely paths, (1/2)^12, and drops into the 10x slot. The sound is discrete events only (pegs,
+landings, near misses, the final ball and one strike), no music bed.
+
 ## License
 
 [MIT](LICENSE).

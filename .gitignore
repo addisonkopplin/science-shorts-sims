@@ -3,3 +3,9 @@ __pycache__/
 out/
 *.wav
 .DS_Store
+build/
+prev/
+stringart-how-it-picks/solve/trace-loc.json
+stringart-how-it-picks/solve/stages.raw
+stringart-how-it-picks/solve/stages.json
+node_modules/
