@@ -1,0 +1,2 @@
+numpy>=1.22
+pycairo>=1.20
