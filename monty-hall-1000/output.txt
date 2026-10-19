@@ -1,0 +1,12 @@
+seed=20261019, games=1000
+  after   10 games: stay won    1 (10.0%), switch won    9 (90.0%)
+  after   30 games: stay won    4 (13.3%), switch won   26 (86.7%)
+  after  100 games: stay won   32 (32.0%), switch won   68 (68.0%)
+  after  300 games: stay won   99 (33.0%), switch won  201 (67.0%)
+  after 1000 games: stay won  329 (32.9%), switch won  671 (67.1%)
+reference: 1,000,000 games, switch won 66.6606%, stay won 33.3394%
+exact: P(switch wins) = 2/3, P(stay wins) = 1/3
+exact, 100 doors: P(switch wins) = 99/100
+ignorant host (random door, car-reveals discarded): 666,126 games kept, switch won 49.9985%
+exact, ignorant host: P(switch wins | goat shown) = 1/2
+2,000 runs of 1,000 games: switch wins median 667, middle 95% 637-695, min 609, max 721; runs where staying beat switching: 0
