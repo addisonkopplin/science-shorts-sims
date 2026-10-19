@@ -1,0 +1,10 @@
+timestamp 871696354 = 1997-08-16T01:52:34+00:00
+candidate 1842: c49d360886e704936a6678e1139d26b7819f7e90 matches FIPS 186-2 seed: True
+bytes drawn up to and including candidate 1842: 36840
+SHA-1 procedure gives c == published c: True
+published b satisfies b^2*c == -27 mod p: True
+P-192 1997-05-18T14:45:34+00:00 139 3045ae6fc8422f64ed579528d38120eae12196d5
+P-224 1998-04-03T12:52:07+00:00 7026 bd71344799d5c7fcdc45b59fa3b9ab8f6a948bc5
+P-384 1997-08-30T14:50:08+00:00 2688 a335926aa319a27a1d00896a6773a4827acdac73
+P-521 1997-08-08T01:12:04+00:00 1136 d09e8800291cb85396cc6717393284aaa0da64ba
+candidate 876 (same run, reported as valid-but-unused): 50c71a63f911db7b2f31618ecf609d37154437f9
